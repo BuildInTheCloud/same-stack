@@ -1,18 +1,22 @@
 import { Component } from '@angular/core';
 
-import { HomePage } from '../home/home';
+//-- app pages for tabs
+import { ProfilePage } from '../profile/profile';
+import { QuestionsPage } from '../questions/questions';
+import { ComparePage } from '../compare/compare';
+import { MatchPage } from '../match/match';
 import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
 
 @Component({
   templateUrl: 'tabs.html'
 })
+
 export class TabsPage {
-  // this tells the tabs component which Pages
-  // should be each tab's root Page
-  tab1Root: any = HomePage;
-  tab2Root: any = AboutPage;
-  tab3Root: any = ContactPage;
+  tabProfile: any = ProfilePage;
+  tabQuestions: any = QuestionsPage;
+  tabCompare: any = ComparePage;
+  tabMatch: any = MatchPage;
+  tabAbout: any = AboutPage;
 
   constructor() {
 

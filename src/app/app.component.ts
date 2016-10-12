@@ -4,10 +4,10 @@ import { StatusBar } from 'ionic-native';
 
 import { TabsPage } from '../pages/tabs/tabs';
 
-
 @Component({
   template: `<ion-nav [root]="rootPage"></ion-nav>`
 })
+
 export class MyApp {
   rootPage = TabsPage;
 
